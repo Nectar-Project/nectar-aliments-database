@@ -1,10 +1,13 @@
-from fdb.datasources.ciqual import CiqualDatasource
+#from fdb.datasources.ciqual import CiqualDatasource
+from fdb.datasources.cnf import CnfDatasource
 
 
 class Datasources:
     def __init__(self):
         self.datasources = [
-            CiqualDatasource()
+            # Ciqual has not enough data
+            # CiqualDatasource()
+            CnfDatasource()
         ]
 
     def generate(self):
